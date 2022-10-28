@@ -1,15 +1,30 @@
 {
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "eslint": "^8.26.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-css": "^0.6.0",
     "eslint-plugin-html": "^7.1.0",
+    "html-loader": "^4.2.0",
+    "html-webpack-plugin": "^5.5.0",
     "husky": "^8.0.1",
-    "lint-staged": "^13.0.3"
+    "lint-staged": "^13.0.3",
+    "mini-css-extract-plugin": "^2.6.1",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
+    "sass-resources-loader": "^2.2.5",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   },
   "scripts": {
     "lint": "eslint./src",
-    "lint:fix": "eslint./src --fix"
+    "lint:fix": "eslint./src --fix",
+    "build-dev": "webpack",
+    "start": "webpack serve",
+    "build-prod": "webpack --node-env=production",
+    "clear": "rd /s /q dist"
   },
   "husky": {
     "hooks": {
@@ -22,5 +37,4 @@
       "git add"
     ]
   }
-
 }

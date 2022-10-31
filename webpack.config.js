@@ -18,11 +18,25 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            template: path.resolve(__dirname, 'src', 'index.html')
+            filename: 'index.html',
+            template: './src/index.html',
         }),
-        new MiniCssExtractPlugin({
-            filename: 'style.css',
-        })
+        new HtmlWebpackPlugin({
+            filename: 'about.html',
+            template: './src/about.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'blog.html',
+            template: './src/blog.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'gallery.html',
+            template: './src/gallery.html',
+        }),
+        new HtmlWebpackPlugin({
+            filename: 'contact.html',
+            template: './src/contact.html',
+        }),
     ],
     module: {
         rules: [

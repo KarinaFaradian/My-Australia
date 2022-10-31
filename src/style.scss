@@ -1,12 +1,12 @@
 @import './Header/header.scss';
 @import './Footer/footer.scss';
-
-$font: 'Tinos', serif;
+@import './vars.scss';
 
 html,
     body {
     height: 100%;
     font-family: $font;
+    color: $black;
 }
 
 body {
@@ -19,6 +19,12 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100%;
+}
+
+.menu {
+    &__list-link {
+           color: $green;
+       }
 }
 
 #main {

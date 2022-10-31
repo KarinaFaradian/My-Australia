@@ -1,3 +1,92 @@
-.footer-title {
-    color: red;
+@import '../vars.scss';
+
+.footer {
+    &__content {
+        background-color: $grey;
+        padding: 80px;
+    }
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info {
+        width: 540px;
+    }
+    &__info-title {
+        margin-bottom: 14px;
+        font-weight: 700;
+    }
+    &__info-text {
+        margin-bottom: 14px;
+    }
+    &__info-email {
+        margin-bottom: 20px;
+        font-weight: 700;
+        color: $black;
+        display: inline-block;
+        padding-left: 30px;
+        text-decoration: none;
+        position: relative;
+    }
+    &__info-envelope {
+        left: 0;
+        top: 5px;
+        width: 20px;
+        height: 16px;
+        position: absolute;
+    }
+    &__form {
+        display: flex;
+    }
+    &__form-input {
+        padding: 6px 10px;
+        border-radius: 21px;
+        background-color: transparent;
+        border: 1px solid $black;
+        width: 100%;
+        &::placeholder {
+            font-family: $font;
+            font-weight: 400;
+        }
+    }
+    &__form-button {
+        padding: 6px 10px;
+        border: none;
+        margin-left: 10px;
+        border-radius: 21px;
+        background-color: $black;
+        color: #fffff0;
+        min-width: 100px;
+        cursor: pointer;
+    }
+    &__social {
+        margin-right: 100px;
+        list-style-type: none;
+        max-width: 540px;
+    }
+    &__social-item {
+        margin-bottom: 14px;
+        font-weight: 700;
+        position: relative;
+        
+    }
+    &__social-link {
+        color: $black;
+        text-decoration: none;
+        padding-left: 30px;
+        display: inline-block;
+    }
+    &__social-icon {
+        left: 0;
+        top: 5px;
+        width: 20px;
+        height: 16px;
+        position: absolute;
+    }
+    &__copyright {
+        background-color: $black;
+        color: #A1A1A1;
+        text-align: center;
+        padding: 25px 10px;
+    }
 }

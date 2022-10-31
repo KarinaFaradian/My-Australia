@@ -1,4 +1,4 @@
-$text: #ffffff;
+@import '../vars.scss';
 
 .container {
     max-width: 1140px;
@@ -23,9 +23,6 @@ $text: #ffffff;
     &__list-item {
         padding-left: 50px;
         padding-right: 50px;
-    }
-    &__list-link {
-        color: #1d5834;
     }
 }
 

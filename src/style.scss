@@ -1,76 +1,80 @@
-@import './Header/header.scss';
-@import './Footer/footer.scss';
-@import './vars.scss';
+@import './Header/header';
+@import './Footer/footer';
+@import './vars';
 
 html,
-    body {
-    height: 100%;
-    font-family: $font;
-    color: $black;
+body {
+  height: 100%;
+  font-family: $font;
+  color: $black;
 }
 
 body {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .top {
-    &__img {
-        max-width: 1340px;
-        position: relative;
-        width: 100%;
-        background-size: cover
-    }
-    &__title {
-        color: #fffff5;
-        font-weight: 700;
-        font-size: 30px;
-        position: absolute;
-        top: 120px;
-        left: 30px;
-    }
+  &__img {
+    max-width: 1340px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+  }
+
+  &__title {
+    color: #fffff5;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+  }
 }
 
 .gallery {
-    &__add {
-        padding: 6px 10px;
-        border: none;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        border-radius: 21px;
-        background-color: $black;
-        width: 100%;
-        cursor: pointer;
-    }
-    &__list {
-        max-width: 1340px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-template-rows: repeat(2, 150px);
-        grid-gap: 10px; 
-    }
-    &__list-item {
-        list-style-type: none;
-        position: relative;
-        padding: 0px 0px 80% 0px;
-    }
-    &__list-item img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  &__add {
+    padding: 6px 10px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 21px;
+    background-color: $black;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__list {
+    max-width: 1340px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-rows: repeat(2, 150px);
+    grid-gap: 10px;
+  }
+
+  &__list-item {
+    list-style-type: none;
+    position: relative;
+    padding: 0 0 80%;
+  }
+
+  &__list-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }

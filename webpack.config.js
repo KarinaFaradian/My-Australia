@@ -37,6 +37,22 @@ module.exports = {
       filename: 'contact.html',
       template: './src/contact.html',
     }),
+    new HtmlWebpackPlugin({
+      filename: 'page__giraffes.html',
+      template: './src/page__giraffes.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'page__canyon.html',
+      template: './src/page__canyon.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'page__koala.html',
+      template: './src/page__koala.html',
+    }),
+    new HtmlWebpackPlugin({
+      filename: 'page__coast.html',
+      template: './src/page__coast.html',
+    }),
   ],
   module: {
     rules: [

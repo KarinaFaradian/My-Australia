@@ -91,7 +91,7 @@ body {
   &__list-item {
     display: grid;
     grid-auto-flow: row;
-    grid-template: auto 1fr minmax(40px,auto) / 1fr;
+    grid-template: auto 1fr minmax(40px, auto) / 1fr;
   }
   &__list-image {
     position: relative;
@@ -120,13 +120,13 @@ body {
   display: grid;
   column-gap: 150px;
   grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
-  
+
   &__article {
-  display: grid;
-  grid-auto-flow: row;
-  grid-template: 1000px / 50% 50%;
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: 1000px / 50% 50%;
   }
-  
+
   &__article-note {
     margin-right: 10px;
   }
@@ -135,18 +135,18 @@ body {
     font-weight: 700;
     font-size: 30px;
   }
-  
+
   &__article-description {
     text-align: justify;
   }
-  
+
   &__article-image img {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
   }
   &__article-image {
     position: relative;

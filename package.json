@@ -5,6 +5,7 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-css": "^0.6.0",
     "eslint-plugin-html": "^7.1.0",
+    "gh-pages": "^4.0.0",
     "glob": "^8.0.3",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
@@ -24,9 +25,12 @@
     "lint:fix": "eslint./src --fix",
     "build-dev": "webpack",
     "start": "webpack serve",
-    "build-prod": "webpack --node-env=production",
-    "clear": "rd /s /q dist"
+    "build": "webpack --node-env=production",
+    "clear": "rd /s /q dist",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "https://KarinaFaradian.github.io/My-Australia",
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

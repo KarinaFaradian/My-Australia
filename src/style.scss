@@ -154,3 +154,64 @@ body {
     margin: 0px 0px 20px 0px;
   }
 }
+
+.contact {
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    color: $black;
+    margin-left: 30px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 2fr));
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    justify-items: center;
+  }
+
+  &__form-input {
+    height: 50px;
+    border-radius: 21px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__form-button {
+    border: none;
+    border-radius: 21px;
+    height: 50px;
+    background-color: $black;
+    color: #fffff0;
+    width: 400px;
+    cursor: pointer;
+  }
+}
+
+#name {
+  width: 300px;
+  border: none;
+  background-color: $black;
+  color: #fffff0;
+}
+
+#surname {
+  width: 300px;
+  border: none;
+  background-color: $grey;
+  color: $black;
+}
+
+#email {
+  width: 300px;
+  background-color: $black;
+  color: #fffff0;
+}
+
+#text {
+  height: 150px;
+  width: 350px;
+  background-color: $grey;
+  color: $black;
+}

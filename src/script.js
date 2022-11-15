@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable import/extensions */
 import './style.scss';
-import Header from './Header/header.js';
+import Header from './header/header.js';
 import Footer from './Footer/footer.js';
 import Carousel from './carousel/carousel.js';
 

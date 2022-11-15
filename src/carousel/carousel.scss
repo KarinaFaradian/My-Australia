@@ -1,0 +1,52 @@
+@import '../vars';
+
+.carousel {
+  &__container {
+    max-width: 612px;
+    height: 600px;
+
+    // border: 2px solid black;
+    margin: 10px auto;
+    overflow: hidden;
+  }
+
+  &__list {
+    list-style-type: none;
+    padding: 0;
+    width: 2448px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+  }
+
+  &__list-item {
+    padding: 6px;
+    width: 612px;
+    height: 450px;
+    display: flex;
+    position: relative;
+  }
+
+  &__prev {
+    padding: 6px;
+    border: none;
+    margin-left: 6px;
+    border-radius: 21px;
+    background-color: $black;
+    width: 48%;
+    color: #fffff0;
+    cursor: pointer;
+  }
+
+  &__next {
+    padding: 6px 10px;
+    border: none;
+    margin-right: 6;
+    border-radius: 21px;
+    background-color: $black;
+    width: 48%;
+    color: #fffff0;
+    cursor: pointer;
+  }
+}

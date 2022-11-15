@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -6,7 +7,7 @@ const mode = process.env.NODE_END || 'development';
 const devMode = mode === 'development';
 
 module.exports = {
-  entry: './src/script.js',
+  entry: ['./src/script.js', './src/Header/header.js', './src/Footer/footer/js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',

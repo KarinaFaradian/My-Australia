@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import htmlToElement from '../utilis/htmlToElement';
 
 import Header from './header.html';

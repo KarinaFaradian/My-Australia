@@ -7,7 +7,7 @@ const mode = process.env.NODE_END || 'development';
 const devMode = mode === 'development';
 
 module.exports = {
-  entry: ['./src/script.js', './src/Header/header.js', './src/Footer/footer/js'],
+  entry: './src/script.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'main.js',

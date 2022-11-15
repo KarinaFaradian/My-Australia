@@ -1,3 +1,5 @@
+/* eslint-disable prettier/prettier */
+/* eslint-disable import/extensions */
 import './style.scss';
 import Header from './Header/header.js';
 import Footer from './Footer/footer.js';

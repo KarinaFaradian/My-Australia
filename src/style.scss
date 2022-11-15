@@ -3,74 +3,224 @@
 @import './vars.scss';
 
 html,
-    body {
-    height: 100%;
-    font-family: $font;
-    color: $black;
+body {
+  height: 100%;
+  font-family: $font;
+  color: $black;
 }
 
 body {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 27px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 .main {
-    flex: 1 0 auto;
+  flex: 1 0 auto;
 }
 
 .top {
-    &__img {
-        max-width: 1340px;
-        position: relative;
-        width: 100%;
-        background-size: cover
-    }
-    &__title {
-        color: #fffff5;
-        font-weight: 700;
-        font-size: 30px;
-        position: absolute;
-        top: 120px;
-        left: 30px;
-    }
+  &__img {
+    max-width: 1340px;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+  }
+
+  &__title {
+    color: #fffff5;
+    font-weight: 700;
+    font-size: 30px;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+  }
 }
 
 .gallery {
-    &__add {
-        padding: 6px 10px;
-        border: none;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        border-radius: 21px;
-        background-color: $black;
-        width: 100%;
-        cursor: pointer;
-    }
-    &__list {
-        max-width: 1340px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        grid-template-rows: repeat(2, 150px);
-        grid-gap: 10px; 
-    }
-    &__list-item {
-        list-style-type: none;
-        position: relative;
-        padding: 0px 0px 80% 0px;
-    }
-    &__list-item img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  &__add {
+    padding: 6px 10px;
+    border: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border-radius: 21px;
+    background-color: $black;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  &__list {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-auto-rows: 1fr;
+  }
+
+  &__list-item {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: auto / 1fr;
+  }
+
+  &__list-image {
+    position: relative;
+    padding: 0 0 85%;
+    margin: 0 0 20px;
+  }
+
+  &__list-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.blog {
+  &__list {
+    display: grid;
+    column-gap: 30px;
+    row-gap: 50px;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  }
+
+  &__list-item {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: auto 1fr minmax(40px, auto) / 1fr;
+  }
+
+  &__list-image {
+    position: relative;
+    padding: 0 0 85%;
+    margin: 0 0 20px;
+  }
+
+  &__list-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__list-title {
+    text-decoration: none;
+    color: $green;
+    font-weight: 700;
+  }
+
+  &__list_description {
+    font-weight: 400;
+  }
+}
+
+.page {
+  display: grid;
+  column-gap: 150px;
+  grid-template-columns: repeat(auto-fit, minmax(700px, 1fr));
+
+  &__article {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template: 1000px / 50% 50%;
+  }
+
+  &__article-note {
+    margin-right: 10px;
+  }
+
+  &__article-title {
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  &__article-description {
+    text-align: justify;
+  }
+
+  &__article-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__article-image {
+    position: relative;
+    padding: 0 0 85%;
+    margin: 0 0 20px;
+  }
+}
+
+.contact {
+  &__title {
+    font-weight: 400;
+    font-size: 20px;
+    color: $black;
+    margin-left: 30px;
+  }
+
+  &__form {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(100px, 2fr));
+    grid-gap: 10px;
+    justify-items: center;
+  }
+
+  &__form-input {
+    height: 50px;
+    border-radius: 21px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  &__form-button {
+    border: none;
+    border-radius: 21px;
+    height: 50px;
+    background-color: $black;
+    color: #fffff0;
+    width: 400px;
+    cursor: pointer;
+  }
+}
+
+#name {
+  width: 300px;
+  border: none;
+  background-color: $black;
+  color: #fffff0;
+}
+
+#surname {
+  width: 300px;
+  border: none;
+  background-color: $grey;
+  color: $black;
+}
+
+#email {
+  width: 300px;
+  background-color: $black;
+  color: #fffff0;
+}
+
+#text {
+  height: 150px;
+  width: 350px;
+  background-color: $grey;
+  color: $black;
 }

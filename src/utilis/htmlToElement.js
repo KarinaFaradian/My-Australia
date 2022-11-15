@@ -1,5 +1,6 @@
+// eslint-disable-next-line func-names
 export default function (htmlString) {
-    const template = document.createElement('template');
-    template.innerHTML = htmlString;
-    return template.content.firstChild;
+  const template = document.createElement('template');
+  template.innerHTML = htmlString;
+  return template.content.firstChild;
 }

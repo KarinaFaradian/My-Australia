@@ -1,36 +1,39 @@
-@import '../vars.scss';
+@import '../vars';
 
 .container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 15px;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 .header {
-    &__inner {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 120px;
-    }
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+  }
 }
 
 .menu {
-    &__list {
-        display: flex;
-        list-style-type: none;
-    }
-    &__list-item {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-    &__list-link {
-        color: $green;
-    }
+  &__list {
+    display: flex;
+    list-style-type: none;
+  }
+
+  &__list-item {
+    padding-left: 50px;
+    padding-right: 50px;
+    text-decoration: none;
+  }
+
+  &__list-link {
+    color: $green;
+  }
 }
 
 .logo {
-    margin: 0 auto;
-    height: 60px;
-    width: 60px;
+  margin: 0 auto;
+  height: 60px;
+  width: 60px;
 }
